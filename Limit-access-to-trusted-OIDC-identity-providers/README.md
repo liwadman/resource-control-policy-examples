@@ -40,6 +40,7 @@ Here is a list of the service providers covered in this sample, and their docume
 | Sandboxes.cloud                    | [Sandboxes Docs](https://docs.sandboxes.cloud/docs/cloud-resources-setup)                          | https://sandboxes.cloud | EnforceTrustedOIDCTenantSandBoxes|
 | Datachain.ai                       | [Datachain Docs](https://dvc.org/doc/studio/user-guide/openid-connect)                             | https://studio.datachain.ai/api | EnforceTrustedOIDCTenantDataChain |
 | Codefresh                          | [Codefresh Docs](https://codefresh.io/docs/docs/integrations/oidc-pipelines/)                      | https://oidc.codefresh.io | EnforceTrustedOIDCTenantCodeFresh |
+| Google Cloud (not workspace, or login with google)|  [Google Cloud Docs](https://docs.cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/generateIdToken#response-body)| https://accounts.google.com | EnforceTrustedOIDCTenantGoogle|
 
 This list may not include all possible third party service providers that use a shared issuer URL with their OIDC integration to access AWS accounts. Please review all relevant documentation from your service providers to ensure your security objectives are met when configuring an OIDC integration to AWS from your third party service providers.
 
