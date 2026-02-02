@@ -285,6 +285,20 @@
             "oidc.codefresh.io:sub": "false"
           }
         }
+      },
+      {
+      "Sid": "EnforceTrustedOIDCTenantGoogle"
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "accounts.google.com:organization_number": "123456"
+        },
+        "Null": {
+          "accounts.google.com": "false"
+          }
       }
+    }
     ]
   }
