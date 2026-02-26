@@ -45,7 +45,7 @@
 
 | Included Policy | Rationale | 
 |-------------|-------------|
-|[Deny identity pool unauthenticated access](STS-ProtectEKSPodIdentitiesTags.json) | Protect the session tags set by EKS pod identities. This RCP helps ensure that only AWS service principals can assume IAM role sessions with the EKS pod identity specific session tags, while allowing the role-sessions assumed by EKS pod identities to continue to set them as transitive session tags. This pairs well with a service control policy that restricts the ability for someone to use the iam:TagRole and iam:TagUser permission from creating tags on IAM roles and users with the expected keys and valued by EKS pod identities.|
+|[Protect EKS Pod Identity Session Tags](STS-ProtectEKSPodIdentitiesTags.json) | Protect the session tags set by EKS pod identities. This RCP helps ensure that only AWS service principals can assume IAM role sessions with the EKS pod identity specific session tags, while allowing the role-sessions assumed by EKS pod identities to continue to set them as transitive session tags. This pairs well with a service control policy that restricts the ability for someone to use the iam:TagRole and iam:TagUser permission from creating tags on IAM roles and users with the expected keys and valued by EKS pod identities.|
 
 
 
